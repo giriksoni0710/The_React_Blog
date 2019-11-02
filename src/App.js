@@ -25,7 +25,7 @@ function App() {
     
     <Route path="/article-list" component={ArticleListPage} ></Route>
     
-    <Route path="/article" component={ArticlePage} ></Route>
+    <Route path="/article/:name" component={ArticlePage} ></Route>
     </div>
     </div>
     </Router>
