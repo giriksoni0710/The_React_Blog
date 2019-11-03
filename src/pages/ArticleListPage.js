@@ -1,16 +1,20 @@
 import React from 'react';
 import articleContent from './Article-content';
 
+import ArticlesList from '../components/ArticlesList'
+
 
 const ArticleListPage = () => (
 
 <>
-<h1>Articles </h1>
-{articleContent.map(article => (
+    <h1>Articles </h1>
 
-<h3>{article.title}</h3>
+    {/* here we populate the list of articles from the articlelist component */}
 
-))}
+    <ArticlesList articles= { articleContent }>
+
+    </ArticlesList>
+
 
 </>
 

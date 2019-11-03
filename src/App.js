@@ -16,8 +16,11 @@ function App() {
 
     <Router>
     <div className="App">
-
+    {/* here we load the Navbar exported */}
+  
   <NavBar></NavBar>
+
+    {/* We set routes for each page  */}
   <div id="page-body">
     <Route path="/" component={HomePage} exact></Route>
     

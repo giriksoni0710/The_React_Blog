@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// adding a link for each route
+
 const NavBar = () => (
 
     <nav>
