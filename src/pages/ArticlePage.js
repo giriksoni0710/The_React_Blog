@@ -1,14 +1,15 @@
 import React from 'react';
 import articlecontent from './Article-content';
 import ArticlesList from '../components/ArticlesList';
+import NotFoundPage from './404page'
 
     const ArticlePage = ({ match }) => {
 
     const name = match.params.name;
     const article = articlecontent.find(article => article.name === name);
 
-    // if a user hits a wrong url then display this message
-    if(!article) return <h1>Article Does not Exist</h1>
+    // if a user hits a wrong url then display the 404 page here
+    if(!article) return <NotFoundPage></NotFoundPage>
     
     const otherArticle = articlecontent.filter(article => article.name !== name);
 

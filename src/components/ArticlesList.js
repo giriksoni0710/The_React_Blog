@@ -11,6 +11,7 @@ const ArticlesList = ({ articles }) => (
         <Link class="article-list-item" key={key} to={`/article/${article.name}`}>
     
         {/* populating the list of articles */}
+        
         <h3>{article.title}</h3>
     
         {/* displays 150 words from every article in articlelistpage for each article */}
